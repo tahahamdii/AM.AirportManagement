@@ -46,7 +46,10 @@
     <Compile Include="Domain\Passenger.cs" />
     <Compile Include="Domain\PlaneType.cs" />
     <Compile Include="Domain\Plane.cs" />
+    <Compile Include="Interfaces\IFlightService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\FlightService.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
