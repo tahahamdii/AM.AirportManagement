@@ -42,10 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Domain\Article.cs" />
     <Compile Include="Domain\Flight.cs" />
     <Compile Include="Domain\Passenger.cs" />
     <Compile Include="Domain\PlaneType.cs" />
     <Compile Include="Domain\Plane.cs" />
+    <Compile Include="Domain\Program.cs" />
     <Compile Include="Interfaces\IFlightService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\FlightService.cs" />

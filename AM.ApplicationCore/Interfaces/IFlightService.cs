@@ -8,5 +8,6 @@ namespace AM.ApplicationCore.Interfaces
 {
     internal interface IFlightService
     {
+        void ShowFlights(string filterType, string filterValue);
     }
 }
