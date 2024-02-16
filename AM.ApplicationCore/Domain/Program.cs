@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -78,5 +79,25 @@ namespace AM.ApplicationCore.Domain
         }else { Console.WriteLine("article not found")}
     }
 
+    static void AjouterArticle()
+    {
+        Console.Write("Entrez la référence de l'article: ");
+        int reference = int.Parse(Console.ReadLine());
+        if (stock.Find(a => a.Reference == reference) != null)
+        {
+            Console.WriteLine("Une article avec cette référence existe déjà.");
+            return;
+        }
+
+        Console.Write("Entrez le nom de l'article: ");
+        string nom = Console.ReadLine();
+        Console.Write("Entrez le prix de vente de l'article: ");
+        double prixVente = double.Parse(Console.ReadLine());
+        Console.Write("Entrez la quantité en stock de l'article: ");
+        int quantiteStock = int.Parse(Console.ReadLine());
+
+        stock.Add(new Article(reference, nom, prixVente, quantiteStock));
+        Console.WriteLine("Article ajouté avec succès.");
+    }
         }
    
